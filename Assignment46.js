@@ -5,6 +5,6 @@ let array = [
     29, -71, 31,
 ];
 
-let posOnly = (arr) => arr.filter((x) => x > 0);
+let posOnly = (arr) => arr.filter((x) => x >= 0);
 
 console.log(posOnly(array));

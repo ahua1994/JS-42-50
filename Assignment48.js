@@ -6,9 +6,11 @@ let text =
 // Expected outcome:
 // [167, 1976, 1981]
 
-let strNums = (str) =>
-    str
+let strNums = (str) => {
+    return str
         .split(" ")
         .filter((x) => !isNaN(parseInt(x)) && parseInt(x) > 150)
         .sort((a, b) => parseInt(a) - parseInt(b));
+};
+
 console.log(strNums(text));

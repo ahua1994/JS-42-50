@@ -8,7 +8,7 @@ let pastDate = "2020-5-31";
 let howLongAgo = (date) => {
     let now = new Date();
     let past = new Date(date);
-    let ms = Math.abs(now - past);
+    let ms = now - past;
     let days = Math.floor(ms / (1000 * 60 * 60 * 24));
     return `It has been ${days} days since ${date}`;
 };
